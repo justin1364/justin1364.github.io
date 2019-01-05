@@ -2,20 +2,35 @@
   <head>
     <style>
       body {
-        background: black;
-        font-family: 'Courgette', cursive;
-        padding: 60px;
+        font-family: 'Josephin Sans', Arial;
       }
-      p {
-        font-size: 64px;
-        line-height: 90px
+      .container {
+        margin: auto;
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+      }
+      .container h1 {
+       border-bottom: 2px solid whiteSmoke; 
       }
     </style>
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
   </head>
 <body>
-  <p style="color: magenta;">Hi. I'm Justin.</p>
-  <p style="color: lawngreen;">The internet is so damn cool.</p>
-  <p style="color: gold;">And scary, amirite?</p>
+  <div class="container">
+  <h1>Justin Krause</h1>
+  <p>I'm a guy living in San Francisco.</p>
+  <p>I will update this site soon. I don't like social media, but if you're interested in what I'm up to, join my mailing list for occasional thoughts and updates.</p>
+   <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/jkrause" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/jkrause', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+     <p>
+       <label for="tlemail">Enter your email address</label>
+     </p>
+     <p>
+       <input type="text" style="width:140px" name="email" id="tlemail" />
+     </p><input type="hidden" value="1" name="embed"/>
+     <input type="submit" value="Subscribe" />
+  </form>
+  </div>
 </body>
 </html>
